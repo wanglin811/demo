@@ -50,7 +50,7 @@ var point=1;
 var map = new Array(24);
 
 function init() {
-
+	openPopup();
 }
 var y_pos;
 var x_pos;

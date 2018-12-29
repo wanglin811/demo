@@ -3,11 +3,12 @@
 		<title></title>
 		<script th:src="@{/js/jquery-1.11.2.min.js}" src="../static/js/jquery-1.11.2.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="../static/css/main.css" th:href="@{/css/main.css}"  />
+		<link rel="stylesheet" type="text/css" href="../static/css/game.css" th:href="@{/css/game.css}"  />
 		<script th:src="@{/js/speak.js}" src="../static/js/speak.js"></script>
-		
+		<script th:src="@{/js/main.js}" src="../static/js/main.js"></script>
 	</head>
 <body>
-	<script language="JavaScript">init();</script>
+	
 	<div id="map"></div>
 	<div id="person"></div>
 	<div id="speak_back"></div>
@@ -23,7 +24,9 @@
 		<input type = "text" id="c"/>
 		<input type = "text" id="d"/>
 	</div>
-	
+	<div id="popup" class="popup">
+	</div>
+	<script language="JavaScript">init();</script>
 </body>
 </html>
 <iframe width=100 height=0></iframe>

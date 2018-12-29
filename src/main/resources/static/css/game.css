@@ -1,0 +1,90 @@
+#map {
+	position: absolute;
+	left: 0px;
+	Top: 0px;
+	width: 640px;
+	height: 480px;
+	z-index: 1;
+	background-image: url(../img/map001.jpg);
+}
+#text{
+	position: absolute;
+	left: 640px;
+	Top: 0px;
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+}
+
+#person {
+	position: absolute;
+	left: 100px;
+	Top: 300px;
+	width: 80px;
+	height: 80px;
+	z-index: 1;
+	background-image: url(../img/0-3.png);
+	position: relative;
+}
+
+#xue {
+	position: absolute;
+	left: 300px;
+	Top: 200px;
+	width: 80px;
+	height: 80px;
+	z-index: 1;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+     src='xue1.png', sizingMethod='scale');
+	position: relative;
+}
+
+#speak_back {
+	position: absolute;
+	left: 50px;
+	Top: 100px;
+	width: 500px;
+	height: 120px;
+	z-index: 1;
+	display: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+     src='speak.png', sizingMethod='scale');
+}
+
+#speak {
+	position: absolute;
+	left: 185px;
+	Top: 125px;
+	width: 350px;
+	height: 120px;
+	z-index: 1;
+	display: none;
+}
+
+#head {
+	position: absolute;
+	left: 50px;
+	Top: 105px;
+	width: 500px;
+	height: 120px;
+	z-index: 1;
+	display: none;
+}
+
+#button {
+	position: absolute;
+	left: 0px;
+	Top: 500px;
+	width: 800px;
+	height: 150px;
+	z-index: 1;
+}
+
+#11 {
+	position: absolute;
+	left: 0px;
+	Top: 500px;
+	width: 800px;
+	height: 150px;
+	z-index: 1;
+}
