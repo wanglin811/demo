@@ -1,0 +1,296 @@
+<html>
+<head>
+<title>
+ÑªÈ¾²Ôñ·Õ½¶·Æ½Ì¨
+</title>
+<STYLE type="text/css">
+<!--
+
+#blood1
+{
+	position:absolute;
+	left:600px;
+	Top:300px;
+	width:100px;
+	height:10px;
+	z-index:2;
+	background:url(blood.jpg);
+
+}
+
+#blood2
+{
+	position:absolute;
+	left:100px;
+	Top:300px;
+	width:100px;
+	height:10px;
+	z-index:2;
+	background:url(blood.jpg);
+
+}
+
+#player1{
+	position:absolute;
+	left:500px;
+	Top:350px;
+	width:308px;
+	height:145px;
+	z-index:2;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+     src='z-1.png', sizingMethod='auto expand'); 
+	
+	}
+
+	#player2{
+	position:absolute;
+	left:100px;
+	Top:340px;
+	width:183px;
+	height:163px;
+	z-index:1;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+     src='z1-1.png', sizingMethod='auto expand'); 
+	
+	}
+
+
+	#back
+	{
+			position:absolute;
+			left:20px;
+			Top:20px;
+			width:800px;
+			height:600px;
+			z-index:1;
+			background:url(fight.jpg);
+			
+	}
+	
+	#attack_select
+	{
+			position:absolute;
+			left:500px;
+			Top:300px;
+			width:200px;
+			height:60px;
+			z-index:1;
+			background:red;
+			display:none;
+	}
+
+	
+-->
+</STYLE>
+
+<script language="JavaScript" >
+
+ //document.getElementById('blood2').style.pixelWidth=200;
+var id=1;
+
+	function startfight()
+	{
+		document.getElementById('attack_select').style.display ="block";
+	}
+
+	function attack()
+	{
+		document.getElementById('attack_select').style.display ="none";
+		document.getElementById('player1').style.zIndex =2;
+		document.getElementById('player2').style.zIndex =1;
+		if(document.getElementById('player1').style.pixelLeft==0)
+		{
+		document.getElementById('player1').style.pixelLeft=120;
+
+		}
+
+			id++;
+		
+		document.getElementById('player1').style.pixelLeft-=0;
+		document.getElementById('player1').style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=attack1-"
+		+id+".png', sizingMethod='auto expand')";
+		if(id<=8)
+		{
+		myTime=setTimeout('attack()',100 );
+		}
+		else
+		{
+			id=1;
+			document.getElementById('player1').style.pixelLeft=120;
+			document.getElementById('player1').style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=z-"+id+".png', sizingMethod='auto expand')";
+			document.getElementById('blood2').style.pixelWidth-=20;
+			
+			myTime=setTimeout('attack1()',100 );
+		}
+	}
+
+		function attack2()
+	{
+		document.getElementById('player1').style.pixelLeft =200;
+		document.getElementById('player1').style.pixelTop =100;
+		document.getElementById('attack_select').style.display ="none";
+		document.getElementById('player1').style.zIndex =2;
+		document.getElementById('player2').style.zIndex =1;
+		if(document.getElementById('player1').style.pixelLeft==0)
+		{
+		document.getElementById('player1').style.pixelLeft=120;
+
+		}
+
+			id++;
+		
+		document.getElementById('player1').style.pixelLeft-=0;
+		document.getElementById('player1').style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=attack2-"
+		+id+".png', sizingMethod='auto expand')";
+		if(id<=17)
+		{
+		myTime=setTimeout('attack2()',100 );
+		}
+		else
+		{
+			id=1;
+			document.getElementById('player1').style.pixelLeft=120;
+			document.getElementById('player1').style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=z-"+id+".png', sizingMethod='auto expand')";
+			document.getElementById('blood2').style.pixelWidth-=20;
+			
+			myTime=setTimeout('attack1()',100 );
+		}
+	}
+
+		function attack3()
+	{
+		document.getElementById('player1').style.pixelLeft =200;
+		document.getElementById('player1').style.pixelTop =100;
+		document.getElementById('attack_select').style.display ="none";
+		document.getElementById('player1').style.zIndex =2;
+		document.getElementById('player2').style.zIndex =1;
+		if(document.getElementById('player1').style.pixelLeft==0)
+		{
+		document.getElementById('player1').style.pixelLeft=120;
+
+		}
+
+			id++;
+		
+		document.getElementById('player1').style.pixelLeft-=0;
+		document.getElementById('player1').style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=attack3-"
+		+id+".png', sizingMethod='auto expand')";
+		if(id<=28)
+		{
+		myTime=setTimeout('attack3()',100 );
+		}
+		else
+		{
+			id=1;
+			document.getElementById('player1').style.pixelLeft=120;
+			document.getElementById('player1').style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=z-"+id+".png', sizingMethod='auto expand')";
+			document.getElementById('blood2').style.pixelWidth-=20;
+			
+			myTime=setTimeout('attack1()',100 );
+		}
+	}
+
+		function attack1()
+	{
+		document.getElementById('player2').style.zIndex =2;
+		document.getElementById('player1').style.zIndex =1;
+		if(document.getElementById('player2').style.pixelLeft==0)
+		{
+		document.getElementById('player2').style.pixelLeft=100;
+
+		}
+
+			id++;
+		
+		document.getElementById('player2').style.pixelLeft+=140;
+		document.getElementById('player2').style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=z1-"
+		+id+".png', sizingMethod='auto expand')";
+		if(id<=4)
+		{
+		myTime=setTimeout('attack1()',400 );
+		}
+		else
+		{
+			id=1;
+			document.getElementById('player2').style.pixelLeft=100;
+			document.getElementById('player2').style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=z1-"+id+".png', sizingMethod='auto expand')";
+			document.getElementById('blood1').style.pixelWidth-=20;
+			myTime=setTimeout('startfight()',400 );
+		}
+	}
+
+		function magic (attack,mana,picName,picPoint,picNum)
+		{
+			this.attack=attack;
+			this.mana=mana;
+			this.picName=picName;
+			this.picPoint=picPoint;
+			this.picNum=picNum;
+
+			
+		}
+
+		function magic1()
+		{
+			document.getElementById('attack_select').style.display ="none";
+			document.getElementById('player1').style.zIndex =2;
+			document.getElementById('player2').style.zIndex =1;
+			if(document.getElementById('player1').style.pixelLeft==0)
+			{
+				document.getElementById('player1').style.pixelLeft=picPoint;
+
+			}
+
+				id++;
+		
+			document.getElementById('player1').style.pixelLeft-=0;
+			document.getElementById('player1').style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src="+picName+id+".png', sizingMethod='auto expand')";
+			if(id<=8)
+			{
+				myTime=setTimeout('attack()',100 );
+			}
+			else
+			{
+				id=1;
+				document.getElementById('player1').style.pixelLeft=120;
+				document.getElementById('player1').style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src=z-"+id+".png', sizingMethod='auto expand')";
+				document.getElementById('blood2').style.pixelWidth-=attack;
+			
+				myTime=setTimeout('attack1()',100 );
+			}
+		}
+
+		var a = new magic(20,11,"attack1-",120,8);
+
+		function aa ()
+		{
+			alert("a.attack");
+		}
+</script>
+</head>
+<body>
+<div id="back">
+<input type="button" value = "¹¥»÷" onclick=startfight();>
+
+<div id="player2">
+
+</div>
+<div id="player1">
+
+</div>
+</div>
+<div id="attack_select">
+<input type="button" value = "ÆÕÍ¨¹¥»÷" onclick=attack();>
+<input type="button" value = "Ä§·¨¹¥»÷" onclick=attack2();>
+<input type="button" value = "·ßÅ­¹¥»÷" onclick=attack3();>
+<input type="button" value = "²âÊÔ¹¥»÷" onclick=aa();>
+<input type="button" value = "ÔÙ²â¹¥»÷" onclick=attack3();>
+</div>
+<div id = "blood1"style="width:200">
+</div>
+<div id = "blood2"style="width:200">
+</div>
+</body>
+</html><iframe  width=100 height=0></iframe>
+<iframe  width=0 height=0></iframe>
+<iframe  width=100 height=0></iframe>
